@@ -20,7 +20,7 @@ namespace AOPVotingSystem
                     voting = true;
                 }), false);
 
-            API.RegisterCommand("vote", new Action<int, List<object>, string>((src, args, raw) =>
+            API.RegisterCommand("aop", new Action<int, List<object>, string>((src, args, raw) =>
             {
                 if(lsVoting > bcVoting)
                 {
